@@ -3,10 +3,8 @@ package main
 import (
 	"context"
 
-	pb "github.com/naichadouban/learngrpc/demo1/proto"
+	pb "github.com/naichadouban/learngrpc/demo7-simple-http/proto"
 	"google.golang.org/grpc"
-	"log"
-	"net"
 	"net/http"
 	"strings"
 )
@@ -24,10 +22,7 @@ const (
 
 func main() {
 	mux := getHTTPServerMux()
-	lis, err := net.Listen("tcp", port)
-	if err != nil {
-		log.Panicf("listen error:%v", err)
-	}
+
 	server := grpc.NewServer()
 	pb.RegisterSearchServiceServer(server, &SearchService{})
 

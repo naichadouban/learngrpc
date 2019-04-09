@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	pb "github.com/naichadouban/learngrpc/demo1/proto"
+	pb "github.com/naichadouban/learngrpc/demo7-simple-http/proto"
 	"google.golang.org/grpc"
 	"log"
 )
@@ -12,12 +12,12 @@ const (
 )
 
 func main() {
-	conn, err := grpc.Dial(port, grpc.WithInsecure())
+	cc, err := grpc.Dial(port, grpc.WithInsecure())
 	if err != nil {
 		log.Panicf("grpc dial error:%v", err)
 	}
-	defer conn.Close()
-	client := pb.NewSearchServiceClient(conn)
+	defer cc.Close()
+	client := pb.NewSearchServiceClient(cc)
 	resp, err := client.Search(context.Background(), &pb.SearchRequest{Request: "grpc"})
 	if err != nil {
 		log.Printf("search error:%v", err)
