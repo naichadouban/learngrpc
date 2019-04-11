@@ -16,3 +16,13 @@ grpc学习记录
 https://github.com/EDDYCJY/blog
 
 其中有些地方和参考文章不同，但最终实现效果是一样的。
+
+# 比较好的参考
+grpc入门必读：gRPC Go: Beyond the basics  
+
+https://blog.gopheracademy.com/advent-2017/go-grpc-beyond-basics/
+
+
+这个人的几篇文章都值得参考下
+[Tutorial, Part 1] How to develop Go gRPC microservice with HTTP/REST endpoint, middleware, Kubernetes deployment, etc.
+https://medium.com/@amsokol.com/tutorial-how-to-develop-go-grpc-microservice-with-http-rest-endpoint-middleware-kubernetes-daebb36a97e9
