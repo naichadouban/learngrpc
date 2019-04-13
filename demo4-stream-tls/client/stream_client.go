@@ -2,11 +2,12 @@ package main
 
 import (
 	"context"
-	pb "github.com/naichadouban/learngrpc/demo2-stream/proto"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
 	"io"
 	"log"
+
+	pb "github.com/naichadouban/learngrpc/demo4-stream-tls/proto"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials"
 )
 
 const (
@@ -14,7 +15,7 @@ const (
 )
 
 func main() {
-	c, err := credentials.NewClientTLSFromFile("../server.pem", "learngrpc")
+	c, err := credentials.NewClientTLSFromFile("../conf/server.pem", "localhost")
 	if err != nil {
 		log.Panicln(err)
 	}

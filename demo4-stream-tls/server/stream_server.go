@@ -1,12 +1,13 @@
 package main
 
 import (
-	pb "github.com/naichadouban/learngrpc/demo2-stream/proto"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
 	"io"
 	"log"
 	"net"
+
+	pb "github.com/naichadouban/learngrpc/demo4-stream-tls/proto"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials"
 )
 
 const (
