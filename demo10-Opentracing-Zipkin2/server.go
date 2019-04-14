@@ -41,7 +41,7 @@ func main() {
 		log.Fatalf("zipkin.NewTracer err: %v", err)
 	}
 	// ca tls
-	//cert, err := tls.LoadX509KeyPair("./conf/server/server.crt", "./conf/server/server.key")
+	//conf, err := tls.LoadX509KeyPair("./conf/server/server.crt", "./conf/server/server.key")
 	//if err != nil {
 	//	log.Panicln(err)
 	//}
@@ -54,7 +54,7 @@ func main() {
 	//	log.Panicln("certPool.AppendCertsFromPEM err")
 	//}
 	//c := credentials.NewTLS(&tls.Config{
-	//	Certificates: []tls.Certificate{cert},
+	//	Certificates: []tls.Certificate{conf},
 	//	ClientAuth:   tls.RequireAndVerifyClientCert,
 	//	ClientCAs:    certPool,
 	//})

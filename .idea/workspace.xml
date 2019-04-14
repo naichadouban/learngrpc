@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49d1448d-1950-48d4-bc1c-cf1039f65d06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/golang-tls/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/golang-tls/cert/server.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/golang-tls/cert/server.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/golang-tls/client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/golang-tls/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-tls/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo4-stream-tls/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-tls/client/stream_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo4-stream-tls/client/stream_client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_verify/demo1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo10-Opentracing-Zipkin2/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo10-Opentracing-Zipkin2/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo10-Opentracing-Zipkin2/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo10-Opentracing-Zipkin2/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/golang-tls/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/golang-tls/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/golang-tls/cert/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/golang-tls/conf/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/golang-tls/cert/server.pem" beforeDir="false" afterPath="$PROJECT_DIR$/golang-tls/conf/server.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/golang-tls/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/golang-tls/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc_gateway/cmd/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/grpc_gateway/cmd/server.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +32,7 @@
         <counts>
           <entry key="crt" value="2" />
           <entry key="gitignore" value="1" />
-          <entry key="go" value="44" />
+          <entry key="go" value="45" />
           <entry key="key" value="1" />
           <entry key="md" value="11" />
           <entry key="proto" value="1" />
@@ -41,7 +40,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="44" />
+          <entry key="Go" value="45" />
           <entry key="Markdown" value="10" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="PROTO" value="1" />
@@ -49,15 +48,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="405" />
-          <entry key="md" value="1706" />
+          <entry key="go" value="524" />
+          <entry key="md" value="2322" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="1" />
-          <entry key="Go" value="406" />
-          <entry key="Markdown" value="1704" />
+          <entry key="Go" value="525" />
+          <entry key="Markdown" value="2320" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -82,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/demo4-stream-tls/client/stream_client.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
               <folding>
                 <element signature="e#14#176#0" expanded="true" />
               </folding>
@@ -111,19 +110,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/golang-tls/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="44">
-                <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="610">
+                <caret line="125" column="55" selection-start-line="125" selection-start-column="55" selection-end-line="125" selection-end-column="55" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/golang-tls/server.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -138,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/golang-tls/client.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="215">
+              <caret line="12" column="10" selection-start-line="12" selection-end-line="38" selection-end-column="1" />
               <folding>
                 <element signature="e#14#60#0" expanded="true" />
               </folding>
@@ -186,9 +185,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/demo4-stream-tls/client/stream_client.go" />
         <option value="$PROJECT_DIR$/demo4-stream-tls/README.md" />
-        <option value="$PROJECT_DIR$/golang-tls/README.md" />
         <option value="$PROJECT_DIR$/golang-tls/server.go" />
         <option value="$PROJECT_DIR$/golang-tls/client.go" />
+        <option value="$PROJECT_DIR$/golang-tls/README.md" />
       </list>
     </option>
   </component>
@@ -240,7 +239,7 @@
               <item name="learngrpc" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngrpc" type="462c0819:PsiDirectoryNode" />
               <item name="golang-tls" type="462c0819:PsiDirectoryNode" />
-              <item name="cert" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,6 +258,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gopath\src\github.com\naichadouban\learngrpc\golang-tls\cert" />
       <recent name="D:\gopath\src\github.com\naichadouban\learngrpc" />
       <recent name="D:\gopath\src\github.com\naichadouban\learngrpc\demo7-simple-http2" />
     </key>
@@ -309,12 +309,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17828418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4451683" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -322,7 +323,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22978723" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22978723" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -642,14 +643,14 @@
     <entry file="file://$PROJECT_DIR$/demo4-stream-tls/client/stream_client.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding>
             <element signature="e#14#176#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/golang-tls/cert/server.key">
+    <entry file="file://$PROJECT_DIR$/golang-tls/conf/server.key">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="51" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="51" />
@@ -666,26 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/golang-tls/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="44">
-            <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/golang-tls/client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="e#14#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/golang-tls/server.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -693,6 +674,33 @@
           <folding>
             <element signature="e#14#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/crypto/tls/common.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="451" column="65" lean-forward="true" selection-start-line="451" selection-start-column="65" selection-end-line="451" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/golang-tls/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="12" column="10" selection-start-line="12" selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/golang-tls/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="610">
+            <caret line="125" column="55" selection-start-line="125" selection-start-column="55" selection-end-line="125" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
