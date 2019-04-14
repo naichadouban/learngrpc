@@ -13,8 +13,8 @@ import (
 func main() {
 	roots := x509.NewCertPool()
 	pem, err := ioutil.ReadFile("./conf/server.pem")
-	if err != nil{
-		log.Printf("read crt file error:%v\n",err)
+	if err != nil {
+		log.Printf("read crt file error:%v\n", err)
 	}
 	ok := roots.AppendCertsFromPEM(pem)
 	if !ok {
@@ -23,7 +23,7 @@ func main() {
 
 	tr := &http.Transport{
 		TLSClientConfig: &tls.Config{
-			RootCAs:roots,
+			RootCAs: roots,
 		},
 	}
 
