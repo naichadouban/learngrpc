@@ -6,7 +6,6 @@ import (
 	"github.com/grpc-ecosystem/grpc-opentracing/go/otgrpc"
 	"github.com/openzipkin-contrib/zipkin-go-opentracing"
 
-
 	pb "github.com/naichadouban/learngrpc/demo7-simple-http/proto"
 	"google.golang.org/grpc"
 

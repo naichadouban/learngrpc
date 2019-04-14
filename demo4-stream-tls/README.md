@@ -51,3 +51,15 @@ https://github.com/grpc/grpc-go/issues/2443
 
 # 尝试2
 把自签的证书添加到系统的证书中
+
+看到官方issue的提问https://github.com/grpc/grpc/issues/8393
+
+意思就是官方使用的都是Mozilla的证书，我们导入系统的他也不同。
+如果我们要用自己指定的证书，可是使用这个这个环境变量
+GRPC_DEFAULT_SSL_ROOTS_FILE_PATH 指向自己需要的证书
+
+基本解除了自己心中的疑惑，但是对grpc不熟悉，网上也没有教程，没有进行下去。
+
+但是可以用golang试一试。
+
+具体内容可以看golang-tls章节。

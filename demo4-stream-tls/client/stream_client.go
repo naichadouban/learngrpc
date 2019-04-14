@@ -19,7 +19,7 @@ func main() {
 	//	log.Panicln(err)
 	//}
 	//cc, err := grpc.Dial(port, grpc.WithTransportCredentials(c))
-	cc, err := grpc.Dial(port, grpc.WithInsecure())
+	cc, err := grpc.Dial(port)
 	if err != nil {
 		log.Println(err)
 	}
