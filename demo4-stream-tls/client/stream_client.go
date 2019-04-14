@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"google.golang.org/grpc/credentials"
 	"io"
 	"log"
 
@@ -11,16 +10,16 @@ import (
 )
 
 const (
-	port = ":8011"
+	port = "https://127.0.0.1:8011"
 )
 
 func main() {
-	c, err := credentials.NewClientTLSFromFile("../conf/server.pem", "localhost")
-	if err != nil {
-		log.Panicln(err)
-	}
-	cc, err := grpc.Dial(port, grpc.WithTransportCredentials(c))
-	//cc, err := grpc.Dial(port, grpc.WithInsecure())
+	//c, err := credentials.NewClientTLSFromFile("../conf/server.pem", "localhost")
+	//if err != nil {
+	//	log.Panicln(err)
+	//}
+	//cc, err := grpc.Dial(port, grpc.WithTransportCredentials(c))
+	cc, err := grpc.Dial(port, grpc.WithInsecure())
 	if err != nil {
 		log.Println(err)
 	}

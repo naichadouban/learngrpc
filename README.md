@@ -55,7 +55,7 @@ if err != nil {
 defer conn.Close()
 client := pb.NewSearchClient(conn)
 ```
-
+## 介绍
 ## Simple RPC
 代码在demo2
 1. protoc 的简单命令要掌握，protoc help看下就差不多了
@@ -74,7 +74,7 @@ client := pb.NewSearchClient(conn)
 
 > 在看这部分代码之前，强烈建议先读下面文章
 https://www.barretlee.com/blog/2015/10/05/how-to-build-a-https-server/
-后来发现。这篇文章里讲到的中间人攻击部分是错误，是因为它的请求流程就是错的。它的client给server请求时，第一步就发送随机数了，这是不对的。随机数应该是服务端把证书给客户端返回后，客户端把随机数用公钥加密后给服务端。这样就不会有中间人攻击了，因为即使他拿到了数据，也不知道数据的具体内容是什么。
+后来发现。这篇文章里讲到的中间人攻击部分感觉不准确。密钥协商时第三次必须用公钥加密就好，只有服务端得私钥才可以解开。这样就已经可以防止中间人攻击了，因为即使中间人拿到了数据，他们无法解密。
 https://www.wosign.com/info/https_tls_ssl_http.htm
 https://www.barretlee.com/blog/2016/04/24/detail-about-ca-and-certs/?utm_source=tuicool&utm_medium=referral
 https://blog.csdn.net/ustccw/article/details/76691248
@@ -92,3 +92,12 @@ https://blog.csdn.net/ustccw/article/details/76691248
 
 刚开始的时候，对这节内容和下节内容感觉到很迷惑。基于tls和基于ca的tls，后来看到这句话才恍然大悟啊。
 > 用户证书的制作流程和CA证书的制作是一样的，只是CA是自签发动作，而用户证书是由CA使用私钥签发而已。
+### 困惑1
+为什么请求时，client端也需要配置证书和服务器名？
+可以说明的文章：https://forfuncsake.github.io/post/2017/08/trust-extra-ca-cert-in-go-app/
+
+为了怕这个文章丢失，已经把它复制到demo4-stream-tls里面了。
+
+按照文章所说，我们进行了一些测试，测试记录在本小节readme.md中记录
+
+**有一个特别困惑我得问题，就是浏览器的请求从http转化为https时，只是多出了一个警告提示，但还是可以正常取得结果的**

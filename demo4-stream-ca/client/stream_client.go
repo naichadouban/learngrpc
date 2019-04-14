@@ -4,7 +4,7 @@ import (
 	"context"
 	"crypto/tls"
 	"crypto/x509"
-	pb "github.com/naichadouban/learngrpc/demo2-stream/proto"
+	pb "github.com/naichadouban/learngrpc/demo4-stream-ca/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	"io"
