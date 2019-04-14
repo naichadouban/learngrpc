@@ -2,12 +2,12 @@ package main
 
 import (
 	"context"
+	"google.golang.org/grpc/credentials"
 	"io"
 	"log"
 
 	pb "github.com/naichadouban/learngrpc/demo4-stream-tls/proto"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
 )
 
 const (
@@ -20,6 +20,7 @@ func main() {
 		log.Panicln(err)
 	}
 	cc, err := grpc.Dial(port, grpc.WithTransportCredentials(c))
+	//cc, err := grpc.Dial(port, grpc.WithInsecure())
 	if err != nil {
 		log.Println(err)
 	}
