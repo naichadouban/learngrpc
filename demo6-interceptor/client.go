@@ -2,9 +2,10 @@ package main
 
 import (
 	"context"
-	pb "github.com/naichadouban/learngrpc/demo1/proto"
-	"google.golang.org/grpc"
 	"log"
+
+	pb "github.com/naichadouban/learngrpc/demo6-interceptor/proto"
+	"google.golang.org/grpc"
 )
 
 const (

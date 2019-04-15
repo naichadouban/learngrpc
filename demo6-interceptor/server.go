@@ -2,14 +2,15 @@ package main
 
 import (
 	"context"
-	"github.com/grpc-ecosystem/go-grpc-middleware"
-	pb "github.com/naichadouban/learngrpc/demo1/proto"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
 	"log"
 	"net"
 	"runtime/debug"
+
+	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
+	pb "github.com/naichadouban/learngrpc/demo6-interceptor/proto"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 )
 
 type SearchService struct {

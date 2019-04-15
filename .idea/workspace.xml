@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49d1448d-1950-48d4-bc1c-cf1039f65d06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo10-Opentracing-Zipkin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo10-Opentracing-Zipkin/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/client/stream_client.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/conf/ca.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/conf/ca.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/conf/ca.req" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/conf/ca.srl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/conf/client/client.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/conf/client/client.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/conf/client/client.req" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/conf/server/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/conf/server/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/conf/server/server.req" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/proto/stream.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/proto/stream.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo4-stream-ca/server/stream_server.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo7-simple-http/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo7-simple-http/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo7-simple-http/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo7-simple-http/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo7-simple-http2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo7-simple-http2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +14,13 @@
     <session id="1801913258">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -46,14 +29,14 @@
           <entry key="gitignore" value="1" />
           <entry key="go" value="55" />
           <entry key="key" value="2" />
-          <entry key="md" value="20" />
+          <entry key="md" value="21" />
           <entry key="proto" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Go" value="55" />
-          <entry key="Markdown" value="19" />
+          <entry key="Markdown" value="20" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="PROTO" value="1" />
         </counts>
@@ -61,14 +44,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="go" value="540" />
-          <entry key="md" value="3024" />
+          <entry key="md" value="3034" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="1" />
           <entry key="Go" value="541" />
-          <entry key="Markdown" value="3022" />
+          <entry key="Markdown" value="3032" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -84,50 +67,10 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="766">
-                <caret line="183" selection-start-line="183" selection-end-line="183" />
+              <first_editor relative-caret-position="600">
+                <caret line="56" column="3" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo10-Opentracing-Zipkin/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="120">
-                <caret line="4" selection-start-line="4" selection-end-line="4" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo9-deadline/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="420">
-                <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo9-deadline/server.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-419" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo9-deadline/client.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="49" column="7" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -198,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,14 +174,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gomicroservices" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -296,7 +239,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -308,7 +251,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22978723" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22909881" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -354,9 +297,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo7-simple-http2/proto/search.pb.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo7-simple-http2/conf/ca.crt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -456,13 +396,7 @@
     <entry file="file://$PROJECT_DIR$/demo3-stream/proto/stream.pb.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sign_verify/demo1.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sign_verify/demo1.go" />
     <entry file="file://$PROJECT_DIR$/demo4-stream-tls/How To Trust Extra CA Certs In Your Go App.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
@@ -498,20 +432,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo4-stream-ca/client/stream_client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo4-stream-ca/server/stream_server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="86" column="27" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo4-stream-ca/client/stream_client.go" />
+    <entry file="file://$PROJECT_DIR$/demo4-stream-ca/server/stream_server.go" />
     <entry file="file://$PROJECT_DIR$/golang-tls/conf/server.key">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -561,9 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="e#14#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -637,9 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="44" column="43" lean-forward="true" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-          <folding>
-            <element signature="e#14#214#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -667,9 +583,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo9-deadline/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-419" />
+    <entry file="file://$PROJECT_DIR$/grpc_gateway/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-854">
+            <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo10-Opentracing-Zipkin/README.md">
@@ -680,6 +601,11 @@
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo9-deadline/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo9-deadline/README.md">
@@ -695,8 +621,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="766">
-            <caret line="183" selection-start-line="183" selection-end-line="183" />
+          <first_editor relative-caret-position="600">
+            <caret line="56" column="3" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
