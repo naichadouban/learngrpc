@@ -13,7 +13,7 @@ type SearchService struct {
 }
 
 func (s *SearchService) Search(ctx context.Context, r *pb.SearchRequest) (*pb.SearchResponse, error) {
-	return &pb.SearchResponse{Response: r.GetRequest() + "server"}, nil
+	return &pb.SearchResponse{Response: r.GetRequest() + "grpc server"}, nil
 }
 
 const (
@@ -40,7 +40,7 @@ func main() {
 func getHTTPServerMux() *http.ServeMux {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("eddycjy: go-grpc-example"))
+		w.Write([]byte("http handle: go-grpc-example"))
 	})
 	return mux
 }

@@ -30,7 +30,7 @@ https://medium.com/@amsokol.com/tutorial-how-to-develop-go-grpc-microservice-wit
 
 # 回顾
 方便自己回忆，不构成参考
-## grpc影响
+## grpc介绍
 服务端主要代码
 ```golang
 lis, err := net.Listen("tcp", fmt.Sprintf(":%d", *port))
@@ -55,7 +55,6 @@ if err != nil {
 defer conn.Close()
 client := pb.NewSearchClient(conn)
 ```
-## 介绍
 ## Simple RPC
 代码在demo2
 1. protoc 的简单命令要掌握，protoc help看下就差不多了
@@ -98,6 +97,91 @@ https://blog.csdn.net/ustccw/article/details/76691248
 
 为了怕这个文章丢失，已经把它复制到demo4-stream-tls里面了。
 
-按照文章所说，我们进行了一些测试，测试记录在本小节readme.md中记录
+按照文章所说，我们进行了一些测试，测试记录在本小节[demo4-stream-tls]的readme.md中记录
 
-**有一个特别困惑我得问题，就是浏览器的请求从http转化为https时，只是多出了一个警告提示，但还是可以正常取得结果的**
+## 给grpc加上ca证书
+这里的tls是基于ca的。所以服务端给客户端传输证书的过程中被攻击的弊端就消除了。
+
+### 实验1
+ca证书（ca.pem）我们可以使用系统的。
+
+在下面这篇文章中可以学习，我们可以直接使用系统的证书。
+https://forfuncsake.github.io/post/2017/08/trust-extra-ca-cert-in-go-app/
+
+```go
+// Get the SystemCertPool, continue with an empty pool on error
+rootCAs, _ := x509.SystemCertPool()
+	if rootCAs == nil {
+		rootCAs = x509.NewCertPool()
+	}
+
+```
+这个相当于是把系统的证书进行了一次拷贝，如果我们想要添加证书，可以在拷贝得到的`rootCAs` 中添加。
+
+**或者是我们提前把证书添加到系统证书路径中[参考demo4-stream-tls]，然后把系统证书进行一次拷贝**
+
+## grpc 拦截器（interceptor）-> 中间件
+本节内容在demo6-interceptor
+
+有两种拦截器
+1. grpc.UnaryInterceptor 一元拦截器
+2. grpc.StreamInterceptor 流拦截器
+
+GRPC 本身居然只能设置一个拦截器，要实现过个拦截器怎么办？
+> 我们需要https://github.com/grpc-ecosystem/go-grpc-middleware这个开源项目
+
+这个项目中有一些
+
+感觉interceptor的实现，和http框架gin的中间件是很类似的。
+
+## demo7-sample-http
+我们先实现不带tls的
+
+其实是多了一个判断转发，server是指`grpcServer`，mux是一个`http.ServeMux`
+```go
+
+http.ListenAndServe(port, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if r.ProtoMajor == 2 && strings.Contains(r.Header.Get("Content-Type"), "application/grpc") {
+			server.ServeHTTP(w, r)
+		} else {
+			mux.ServeHTTP(w, r)
+		}
+		return
+	}))
+```
+这个通过浏览器访问时可以的，但是通过client.go访问就会出问题。
+
+因为client.go访问需要进入到 `server.ServeHTTP(w, r)`,这个方法必须接受tls的连接。
+
+所以这节的grpc是不能用的
+
+## demo7-sample-https
+
+通过给通信加上tls证书，我们解决了上节的问题。
+
+## grpc 自定义验证
+比如我们要验证token。
+
+其实对于比较常见的认证，我们做个拦截器也是挺好的。
+
+## grpc Deadline
+主要是放着请求阻塞对服务器造成的危害
+
+设置deadline主要是在客户端
+
+`context.WithDeadline()`
+
+## gprc + Opentracing + Zipkin
+
+分布式链路追踪
+
+代码主要在demo10-Opentracing-Zipkin和 `demo10-Opentracing-Zipkin2`
+
+## grpc 网关
+
+相当于给grpc提供了对应restful访问接口。
+
+
+# 总结
+
+

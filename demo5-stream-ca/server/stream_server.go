@@ -3,13 +3,14 @@ package main
 import (
 	"crypto/tls"
 	"crypto/x509"
-	pb "github.com/naichadouban/learngrpc/demo4-stream-ca/proto"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
 	"io"
 	"io/ioutil"
 	"log"
 	"net"
+
+	pb "github.com/naichadouban/learngrpc/demo5-stream-ca/proto"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials"
 )
 
 const (

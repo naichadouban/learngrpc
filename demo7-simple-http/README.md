@@ -6,7 +6,6 @@ PS D:\gopath\src\github.com\naichadouban\learngrpc\demo7-simple-http> go run .\c
 
 ```
 难道通过HTTP2访问的话，必须是要ssl证书的吗？
-
-
+在demo4-stream-tls回答。
 
 下节验证
